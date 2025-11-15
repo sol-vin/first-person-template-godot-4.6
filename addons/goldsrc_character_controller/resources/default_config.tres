@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EntityConfig" load_steps=2 format=3 uid="uid://c1hjc38orbiye"]
+
+[ext_resource type="Script" uid="uid://c1iga14e2mxfw" path="res://addons/goldsrc_character_controller/scripts/entity_config.gd" id="1_dk8f7"]
+
+[resource]
+script = ExtResource("1_dk8f7")
+FORWARD_SPEED = 40.0
+SIDE_SPEED = 5.0
+MAX_SPEED = 4.19999999999709
+JUMP_HEIGHT = 0.0
+ROLL_ANGLE = 0.0

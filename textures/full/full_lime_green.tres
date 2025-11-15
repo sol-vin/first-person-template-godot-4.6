@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c5361h42hpddr"]
+
+[resource]
+resource_name = "Full Lime Green"
+shading_mode = 0
+albedo_color = Color(0.607843, 0.835294, 0.278431, 1)
+texture_filter = 2

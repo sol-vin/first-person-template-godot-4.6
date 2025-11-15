@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d15w1jbpfq7a2"]
+
+[resource]
+resource_name = "Full White"
+shading_mode = 0
+texture_filter = 2

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://daqpnvyx3t27a"]
+
+[resource]
+resource_name = "Full Peach"
+shading_mode = 0
+albedo_color = Color(1, 0.309804, 0.309804, 1)
+texture_filter = 2

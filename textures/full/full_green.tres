@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cbbpfb7pa3rib"]
+
+[resource]
+resource_name = "Full Green"
+shading_mode = 0
+albedo_color = Color(0.317647, 0.701961, 0.254902, 1)
+texture_filter = 2

@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://pm7nnplwdk28"]
+
+[ext_resource type="Shader" uid="uid://bytnkuyrmylvh" path="res://shaders/outline.gdshader" id="1_d82um"]
+[ext_resource type="Shader" uid="uid://bvjkucko3lath" path="res://shaders/vertex_colors.gdshader" id="2_e2d8n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x128e"]
+render_priority = 0
+shader = ExtResource("1_d82um")
+shader_parameter/on = true
+shader_parameter/color_threshold = 0.001
+shader_parameter/outline_color = Color(0.282353, 0.462745, 0.733333, 1)
+shader_parameter/color_polygons = true
+shader_parameter/polygon_color = Color(0.152941, 0.145098, 0.45098, 1)
+shader_parameter/outline_thickness = 0.5
+shader_parameter/edge_blur = 1.0
+shader_parameter/exact_color_match = false
+shader_parameter/remove_isolated_pixels = true
+shader_parameter/min_connected_edges = 2
+
+[resource]
+resource_name = "Dark Blue"
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_x128e")
+shader = ExtResource("2_e2d8n")
+shader_parameter/on = true

@@ -1,0 +1,26 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ct1ct2h68b24p"]
+
+[sub_resource type="Shader" id="Shader_0wc0i"]
+code = "shader_type spatial;
+render_mode cull_back;
+
+// Per-component sRGB -> Linear conversion (alpha is NOT gamma-corrected).
+vec3 srgb_to_linear(vec3 c) {
+    vec3 lo = c / 12.92;
+    vec3 hi = pow((c + 0.055) / 1.055, vec3(2.4));
+    // step(edge, x): 0 when x < edge, 1 when x >= edge
+    vec3 t = step(vec3(0.04045), c);
+    return mix(lo, hi, t);
+}
+
+void fragment() {
+    vec3 vcol_rgb = COLOR.rgb;
+	vcol_rgb = srgb_to_linear(vcol_rgb);
+    ALBEDO = vcol_rgb;
+    //ALPHA  = albedo_color.a * vcol_a;
+	EMISSION = vcol_rgb;
+}"
+
+[resource]
+render_priority = 0
+shader = SubResource("Shader_0wc0i")

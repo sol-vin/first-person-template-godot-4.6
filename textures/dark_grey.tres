@@ -1,0 +1,26 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cl8co4fyv8252"]
+
+[ext_resource type="Shader" uid="uid://bytnkuyrmylvh" path="res://shaders/outline.gdshader" id="1_5iv1s"]
+[ext_resource type="Shader" uid="uid://bvjkucko3lath" path="res://shaders/vertex_colors.gdshader" id="2_ce0it"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5iv1s"]
+resource_name = "Dark Grey"
+render_priority = 0
+shader = ExtResource("1_5iv1s")
+shader_parameter/on = true
+shader_parameter/color_threshold = 0.001
+shader_parameter/outline_color = Color(0.423529, 0.423529, 0.423529, 1)
+shader_parameter/color_polygons = true
+shader_parameter/polygon_color = Color(0.156863, 0.156863, 0.156863, 1)
+shader_parameter/outline_thickness = 0.5
+shader_parameter/edge_blur = 1.0
+shader_parameter/exact_color_match = false
+shader_parameter/remove_isolated_pixels = true
+shader_parameter/min_connected_edges = 2
+
+[resource]
+resource_name = "Dark Grey"
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_5iv1s")
+shader = ExtResource("2_ce0it")
+shader_parameter/on = true

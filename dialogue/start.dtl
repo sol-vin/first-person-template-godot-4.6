@@ -1,0 +1,4 @@
+do Player.disable_input()
+First Person Template by sol-vin!
+[wait time="0.5"]
+do Player.enable_input()

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cvb7wi87ix62a"]
+
+[resource]
+resource_name = "Full Sky Blue"
+shading_mode = 0
+albedo_color = Color(0.780392, 0.968627, 0.94902, 1)
+texture_filter = 2

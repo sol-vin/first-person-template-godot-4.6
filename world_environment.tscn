@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://do8w8bk243m52"]
+
+[ext_resource type="Environment" uid="uid://dhptyfor421yu" path="res://objects/game/player_camera_environment.tres" id="1_x16oa"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" unique_id=1067884823]
+environment = ExtResource("1_x16oa")

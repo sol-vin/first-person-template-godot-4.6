@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://bl4ca0gv5evi8"]
+
+[ext_resource type="Shader" uid="uid://bytnkuyrmylvh" path="res://shaders/outline.gdshader" id="1_lr6m7"]
+[ext_resource type="Shader" uid="uid://bvjkucko3lath" path="res://shaders/vertex_colors.gdshader" id="2_37lmg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lr6m7"]
+render_priority = 0
+shader = ExtResource("1_lr6m7")
+shader_parameter/on = true
+shader_parameter/color_threshold = 0.001
+shader_parameter/outline_color = Color(0.96, 0.2976, 0.2976, 1)
+shader_parameter/color_polygons = true
+shader_parameter/polygon_color = Color(0.933333, 0.188235, 0.27451, 1)
+shader_parameter/outline_thickness = 0.5
+shader_parameter/edge_blur = 1.0
+shader_parameter/exact_color_match = false
+shader_parameter/remove_isolated_pixels = true
+shader_parameter/min_connected_edges = 2
+
+[resource]
+resource_name = "Red"
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_lr6m7")
+shader = ExtResource("2_37lmg")
+shader_parameter/on = true

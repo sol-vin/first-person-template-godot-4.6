@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://bw74xwj8yngty"]
+
+[ext_resource type="Shader" uid="uid://bytnkuyrmylvh" path="res://shaders/outline.gdshader" id="1_breuw"]
+[ext_resource type="Shader" uid="uid://bvjkucko3lath" path="res://shaders/vertex_colors.gdshader" id="2_6m0lt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_breuw"]
+render_priority = 0
+shader = ExtResource("1_breuw")
+shader_parameter/on = true
+shader_parameter/color_threshold = 0.001
+shader_parameter/outline_color = Color(0.498039, 0.827451, 0.901961, 1)
+shader_parameter/color_polygons = true
+shader_parameter/polygon_color = Color(0.780392, 0.968627, 0.94902, 1)
+shader_parameter/outline_thickness = 0.5
+shader_parameter/edge_blur = 1.0
+shader_parameter/exact_color_match = false
+shader_parameter/remove_isolated_pixels = true
+shader_parameter/min_connected_edges = 2
+
+[resource]
+resource_name = "Sky Blue"
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_breuw")
+shader = ExtResource("2_6m0lt")
+shader_parameter/on = true

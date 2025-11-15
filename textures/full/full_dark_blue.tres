@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cjwu7s1v5rdc4"]
+
+[resource]
+resource_name = "Full Dark Blue"
+shading_mode = 0
+albedo_color = Color(0.152941, 0.145098, 0.45098, 1)
+texture_filter = 2

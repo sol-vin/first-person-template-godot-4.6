@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dsn8bi4o6tcy0"]
+
+[resource]
+resource_name = "Full Purple"
+shading_mode = 0
+albedo_color = Color(0.384314, 0.105882, 0.321569, 1)
+texture_filter = 2

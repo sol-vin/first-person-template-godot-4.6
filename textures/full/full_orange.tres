@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://1rxaqme0prus"]
+
+[resource]
+resource_name = "Full Orange"
+shading_mode = 0
+albedo_color = Color(1, 0.498039, 0.309804, 1)
+texture_filter = 2

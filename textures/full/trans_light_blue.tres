@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bb7vhuasl7rnw"]
+
+[resource]
+resource_name = "Full Light Blue"
+render_priority = 1
+transparency = 1
+blend_mode = 3
+cull_mode = 2
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.3764706, 0.6392157, 0.7019608, 1)
+texture_filter = 2
+stencil_flags = 2

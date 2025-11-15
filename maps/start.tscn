@@ -1,0 +1,89 @@
+[gd_scene load_steps=14 format=4 uid="uid://ctvx8otmvt1st"]
+
+[ext_resource type="Script" uid="uid://wsxfju8aplrm" path="res://scripts/level.gd" id="1_qsust"]
+[ext_resource type="Script" uid="uid://b7fs5r5osk7yq" path="res://scripts/map.gd" id="2_vhhta"]
+[ext_resource type="Resource" uid="uid://bkhxcqsquw1yg" path="res://addons/func_godot/func_godot_default_map_settings.tres" id="3_u2sb3"]
+[ext_resource type="Script" uid="uid://6ffv0v5fbf8b" path="res://scripts/worldspawn.gd" id="4_adovl"]
+[ext_resource type="Material" uid="uid://cqhvyan7vcto7" path="res://textures/white.tres" id="5_liy6q"]
+[ext_resource type="Script" uid="uid://cc847pv64amor" path="res://scripts/polygonmesh.gd" id="6_cnegx"]
+[ext_resource type="Material" uid="uid://bbbsoikwsc01a" path="res://textures/blue.tres" id="7_adovl"]
+
+[sub_resource type="ArrayOccluder3D" id="ArrayOccluder3D_adovl"]
+vertices = PackedVector3Array(32.5, -1, -15, -27, -1, -15, -27, -2.000122, -15, 32.5, -2.000122, -15, -27, -2.000122, 30.5, -27, -2.000122, -15, -27, -1, -15, -27, -1, 30.5, -27, -2, 30.5, 32.5, -2, 30.5, 32.5, -2, -15, -27, -2, -15, -27, -1, 30.5, -27, -1, -15, 32.5, -1, -15, 32.5, -1, 30.5, 32.5, -1, 30.5, 32.5, -1, -15, 32.5, -2.000122, -15, 32.5, -2.000122, 30.5, 32.5, -2.000122, 30.5, -27, -2.000122, 30.5, -27, -1, 30.5, 32.5, -1, 30.5, 1.5, 2.9999998, -1.5, 0.5, 2.9999998, -1.5, 0.5, -0.9998779, -1.5, 1.5, -0.9998779, -1.5, 0.5, -0.9998779, -0.5, 0.5, -0.9998779, -1.5, 0.5, 2.9999998, -1.5, 0.5, 2.9999998, -0.5, 0.5, -1, -0.5, 1.5, -1, -0.5, 1.5, -1, -1.5, 0.5, -1, -1.5, 0.5, 3, -0.5, 0.5, 3, -1.5, 1.5, 3, -1.5, 1.5, 3, -0.5, 1.5, 2.9999998, -0.5, 1.5, 2.9999998, -1.5, 1.5, -0.9998779, -1.5, 1.5, -0.9998779, -0.5, 1.5, -0.9998779, -0.5, 0.5, -0.9998779, -0.5, 0.5, 2.9999998, -0.5, 1.5, 2.9999998, -0.5)
+indices = PackedInt32Array(0, 1, 2, 0, 2, 3, 4, 5, 6, 4, 6, 7, 8, 9, 10, 8, 10, 11, 12, 13, 14, 12, 14, 15, 16, 17, 18, 16, 18, 19, 20, 21, 22, 20, 22, 23, 24, 25, 26, 24, 26, 27, 28, 29, 30, 28, 30, 31, 32, 33, 34, 32, 34, 35, 36, 37, 38, 36, 38, 39, 40, 41, 42, 40, 42, 43, 44, 45, 46, 44, 46, 47)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_liy6q"]
+points = PackedVector3Array(32.5, -1, 30.5, 32.5, -2, 30.5, -27, -1, 30.5, -27, -2, 30.5, 32.5, -1, -15, 32.5, -2, -15, -27, -1, -15, -27, -2, -15)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cnegx"]
+points = PackedVector3Array(1.5, 3, -0.5, 1.5, -1, -0.5, 0.5, 3, -0.5, 0.5, -1, -0.5, 1.5, 3, -1.5, 1.5, -1, -1.5, 0.5, 3, -1.5, 0.5, -1, -1.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0o1id"]
+_surfaces = [{
+"aabb": AABB(-27, -2.000122, -15, 59.5, 5.000122, 45.5),
+"attribute_data": PackedByteArray("YyM//2MjP/9jIz//YyM//2MjP/9jIz//m/Ne/5vzXv+b817/m/Ne/5vzXv+b817/E6wb/xOsG/8TrBv/E6wb/xOsG/8TrBv/+IC///iAv//4gL//+IC///iAv//4gL//BxiH/wcYh/8HGIf/BxiH/wcYh/8HGIf/dshu/3bIbv92yG7/dshu/3bIbv92yG7/nBzw/5wc8P+cHPD/nBzw/5wc8P+cHPD/07wE/9O8BP/TvAT/07wE/9O8BP/TvAT/8jKh//Iyof/yMqH/8jKh//Iyof/yMqH/GGrL/xhqy/8Yasv/GGrL/xhqy/8Yasv/vReF/70Xhf+9F4X/vReF/70Xhf+9F4X/to90/7aPdP+2j3T/to90/7aPdP+2j3T/"),
+"format": 34359738383,
+"material": ExtResource("5_liy6q"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 72,
+"vertex_data": PackedByteArray("AADAP///P0AAAMC/AAAAPwD4f78AAMC/AADAPwD4f78AAMC/AADAP///P0AAAMC/AAAAP///P0AAAMC/AAAAPwD4f78AAMC/AAACQgAAgL8AAHDBAADYwQACAMAAAHDBAAACQgACAMAAAHDBAAACQgAAgL8AAHDBAADYwQAAgL8AAHDBAADYwQACAMAAAHDBAAAAPwD4f78AAAC/AAAAP///P0AAAMC/AAAAP///P0AAAAC/AAAAPwD4f78AAAC/AAAAPwD4f78AAMC/AAAAP///P0AAAMC/AADYwQACAMAAAPRBAADYwQAAgL8AAHDBAADYwQAAgL8AAPRBAADYwQACAMAAAPRBAADYwQACAMAAAHDBAADYwQAAgL8AAHDBAAAAPwAAgL8AAAC/AADAPwAAgL8AAMC/AAAAPwAAgL8AAMC/AAAAPwAAgL8AAAC/AADAPwAAgL8AAAC/AADAPwAAgL8AAMC/AADYwQAAAMAAAPRBAAACQgAAAMAAAHDBAADYwQAAAMAAAHDBAADYwQAAAMAAAPRBAAACQgAAAMAAAPRBAAACQgAAAMAAAHDBAAAAPwAAQEAAAAC/AADAPwAAQEAAAMC/AADAPwAAQEAAAAC/AAAAPwAAQEAAAAC/AAAAPwAAQEAAAMC/AADAPwAAQEAAAMC/AADYwQAAgL8AAPRBAAACQgAAgL8AAHDBAAACQgAAgL8AAPRBAADYwQAAgL8AAPRBAADYwQAAgL8AAHDBAAACQgAAgL8AAHDBAADAP///P0AAAAC/AADAPwD4f78AAMC/AADAPwD4f78AAAC/AADAP///P0AAAAC/AADAP///P0AAAMC/AADAPwD4f78AAMC/AAACQgAAgL8AAPRBAAACQgACAMAAAHDBAAACQgACAMAAAPRBAAACQgAAgL8AAPRBAAACQgAAgL8AAHDBAAACQgACAMAAAHDBAADAPwD4f78AAAC/AAAAP///P0AAAAC/AADAP///P0AAAAC/AADAPwD4f78AAAC/AAAAPwD4f78AAAC/AAAAP///P0AAAAC/AAACQgACAMAAAPRBAADYwQAAgL8AAPRBAAACQgAAgL8AAPRBAAACQgACAMAAAPRBAADYwQACAMAAAPRBAADYwQAAgL8AAPRB//////9/AID//////38AgP//////fwCA//////9/AID//////38AgP//////fwCA//////9/AID//////38AgP//////fwCA//////9/AID//////38AgP//////fwCAAAAAgP9//78AAACA/3//vwAAAID/f/+/AAAAgP9//78AAACA/3//vwAAAID/f/+/AAAAgP9//78AAACA/3//vwAAAID/f/+/AAAAgP9//78AAACA/3//vwAAAID/f/+/AIAAAAAA/78AgAAAAAD/vwCAAAAAAP+/AIAAAAAA/78AgAAAAAD/vwCAAAAAAP+/AIAAAAAA/78AgAAAAAD/vwCAAAAAAP+/AIAAAAAA/78AgAAAAAD/vwCAAAAAAP+/AID//wAA/78AgP//AAD/vwCA//8AAP+/AID//wAA/78AgP//AAD/vwCA//8AAP+/AID//wAA/78AgP//AAD/vwCA//8AAP+/AID//wAA/78AgP//AAD/vwCA//8AAP+///8AgACA/7///wCAAID/v///AIAAgP+///8AgACA/7///wCAAID/v///AIAAgP+///8AgACA/7///wCAAID/v///AIAAgP+///8AgACA/7///wCAAID/v///AIAAgP+//3//fwCAAID/f/9/AIAAgP9//38AgACA/3//fwCAAID/f/9/AIAAgP9//38AgACA/3//fwCAAID/f/9/AIAAgP9//38AgACA/3//fwCAAID/f/9/AIAAgP9//38AgACA")
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vhhta"]
+data = PackedVector3Array(-0.5, -0.23773193, 0.5, -0.5, -0.23773193, -0.5, -0.5, 0.23773193, -0.5, 0.5, -0.23773193, -0.5, -0.5, -0.23773193, -0.5, -0.5, -0.23773193, 0.5, -0.5, 0.23773193, -0.5, -0.5, -0.23773193, -0.5, 0.5, -0.23773193, -0.5, -0.5, 0.23773193, -0.5, -0.5, 0.23773193, 0.5, -0.5, -0.23773193, 0.5, -0.5, -0.23773193, 0.5, -0.5, 0.23773193, 0.5, 0.5, 0.23773193, 0.5, 0.5, 0.23773193, 0.5, -0.5, 0.23773193, 0.5, -0.5, 0.23773193, -0.5, -0.5, -0.23773193, 0.5, 0.5, -0.23773193, 0.5, 0.5, -0.23773193, -0.5, 0.5, 0.23773193, 0.5, 0.5, -0.23773193, 0.5, -0.5, -0.23773193, 0.5, 0.5, -0.23773193, -0.5, 0.5, -0.23773193, 0.5, 0.5, 0.23773193, 0.5, 0.5, -0.23773193, -0.5, 0.5, 0.23773193, -0.5, -0.5, 0.23773193, -0.5, -0.5, 0.23773193, -0.5, 0.5, 0.23773193, -0.5, 0.5, 0.23773193, 0.5, 0.5, 0.23773193, 0.5, 0.5, 0.23773193, -0.5, 0.5, -0.23773193, -0.5)
+
+[sub_resource type="GDScript" id="GDScript_adovl"]
+script/source = "extends ClickAction
+
+func left_click(item):
+	super(item)
+	print(\"CLICKED!\")
+	Dialogic.start(\"start\")
+	
+"
+
+[node name="Start" type="Node3D" unique_id=246623254]
+script = ExtResource("1_qsust")
+metadata/_custom_type_script = "uid://wsxfju8aplrm"
+
+[node name="Map" type="Node3D" parent="." unique_id=345752964]
+script = ExtResource("2_vhhta")
+local_map_file = "uid://v2e8sjgpgvk6"
+map_settings = ExtResource("3_u2sb3")
+metadata/_custom_type_script = "uid://b7fs5r5osk7yq"
+
+[node name="entity_0_worldspawn" type="StaticBody3D" parent="Map" unique_id=789600384]
+collision_mask = 0
+script = ExtResource("4_adovl")
+
+[node name="entity_0_occluder_instance" type="OccluderInstance3D" parent="Map/entity_0_worldspawn" unique_id=801183132]
+occluder = SubResource("ArrayOccluder3D_adovl")
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape3D" parent="Map/entity_0_worldspawn" unique_id=769184463]
+shape = SubResource("ConvexPolygonShape3D_liy6q")
+
+[node name="entity_0_brush_1_collision_shape" type="CollisionShape3D" parent="Map/entity_0_worldspawn" unique_id=1202738925]
+shape = SubResource("ConvexPolygonShape3D_cnegx")
+
+[node name="polygon" type="MeshInstance3D" parent="Map/entity_0_worldspawn" unique_id=584171908]
+extra_cull_margin = 1.0
+mesh = SubResource("ArrayMesh_0o1id")
+script = ExtResource("6_cnegx")
+
+[node name="Test Button" type="StaticBody3D" parent="." unique_id=1921076006]
+collision_layer = 5
+collision_mask = 5
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Test Button" unique_id=371926832]
+transform = Transform3D(1, 0, 0, 0, 0.58021975, -0.81446, 0, 0.81446, 0.58021975, -1.1682941, 0.108454764, -1.9993768)
+size = Vector3(1, 0.47546387, 1)
+material = ExtResource("7_adovl")
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="Test Button" unique_id=443190473]
+transform = Transform3D(1, 0, 0, 0, 0.58021975, -0.81446, 0, 0.81446, 0.58021975, -1.1682941, 0.108454764, -1.9993768)
+shape = SubResource("ConcavePolygonShape3D_vhhta")
+
+[node name="ClickAction" type="Node" parent="Test Button" unique_id=803923793]
+script = SubResource("GDScript_adovl")
+metadata/_custom_type_script = "uid://dpjlao5cmaufy"

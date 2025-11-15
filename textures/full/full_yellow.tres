@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c8bisaip8vj8e"]
+
+[resource]
+resource_name = "Full Yellow"
+shading_mode = 0
+albedo_color = Color(1, 0.976471, 0.443137, 1)
+texture_filter = 2

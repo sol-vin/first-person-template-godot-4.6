@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cp5t4iu0nhyx3"]
+
+[resource]
+resource_name = "Full Dark Pink"
+shading_mode = 0
+albedo_color = Color(0.65098, 0.14902, 0.329412, 1)
+texture_filter = 2

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://do80xoxryiesh"]
+
+[resource]
+resource_name = "Full Tan"
+shading_mode = 0
+albedo_color = Color(0.823529, 0.611765, 0.541176, 1)
+texture_filter = 2

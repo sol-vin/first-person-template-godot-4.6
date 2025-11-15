@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://fql1p8qnhslb"]
+
+[resource]
+resource_name = "Full Brown"
+shading_mode = 0
+albedo_color = Color(0.619608, 0.301961, 0.301961, 1)
+texture_filter = 2

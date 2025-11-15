@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="MaterialsList" load_steps=58 format=3 uid="uid://c2bwxmcjiupcw"]
+
+[ext_resource type="Material" uid="uid://djmem2phud3jv" path="res://textures/black.tres" id="1_ntfnf"]
+[ext_resource type="Script" uid="uid://dyuywepfe74dt" path="res://scripts/resources/materials_list.gd" id="1_tpjws"]
+[ext_resource type="Material" uid="uid://bbbsoikwsc01a" path="res://textures/blue.tres" id="2_sb034"]
+[ext_resource type="Material" uid="uid://ta3uhj0br5ns" path="res://textures/brown.tres" id="3_k0fev"]
+[ext_resource type="Material" uid="uid://pm7nnplwdk28" path="res://textures/dark_blue.tres" id="4_yej3r"]
+[ext_resource type="Material" uid="uid://74frbh017boq" path="res://textures/dark_brown.tres" id="5_a300q"]
+[ext_resource type="Material" uid="uid://mqn06gvw5w3" path="res://textures/dark_green.tres" id="6_t8go4"]
+[ext_resource type="Material" uid="uid://cl8co4fyv8252" path="res://textures/dark_grey.tres" id="7_tyck5"]
+[ext_resource type="Material" uid="uid://cl5rrvfbrfq3" path="res://textures/dark_magenta.tres" id="8_jcoh5"]
+[ext_resource type="Material" uid="uid://d0mvhl66ux7qj" path="res://textures/dark_pink.tres" id="9_kgxg7"]
+[ext_resource type="Material" uid="uid://ctwb0q1vtandj" path="res://textures/full/full_dark_purple.tres" id="10_il6jh"]
+[ext_resource type="Material" uid="uid://yavv2g8pumpo" path="res://textures/green.tres" id="11_ovtox"]
+[ext_resource type="Material" uid="uid://cydrhiocym4ag" path="res://textures/grey.tres" id="12_jj26r"]
+[ext_resource type="Material" uid="uid://d302pir56d32o" path="res://textures/indigo.tres" id="13_ry5kd"]
+[ext_resource type="Material" uid="uid://dn8rsq7b0jrhs" path="res://textures/light_blue.tres" id="14_38f5j"]
+[ext_resource type="Material" uid="uid://du0k0flantpk" path="res://textures/light_grey.tres" id="15_wsr0o"]
+[ext_resource type="Material" uid="uid://5ccx8174j3gr" path="res://textures/lime_green.tres" id="16_al3un"]
+[ext_resource type="Material" uid="uid://i286rv2e8vvy" path="res://textures/magenta.tres" id="17_ao1qn"]
+[ext_resource type="Material" uid="uid://cxwjpvvx5nn86" path="res://textures/med_green.tres" id="18_nanma"]
+[ext_resource type="Material" uid="uid://c3p2514cavfkf" path="res://textures/midnight.tres" id="19_8n07q"]
+[ext_resource type="Material" uid="uid://cvn7qg7uc6xdy" path="res://textures/orange.tres" id="20_eggb3"]
+[ext_resource type="Material" uid="uid://cyi5i12xmjmw7" path="res://textures/peach.tres" id="21_8u3w2"]
+[ext_resource type="Material" uid="uid://b5fl05oxuyrt1" path="res://textures/pink.tres" id="22_2k5ph"]
+[ext_resource type="Material" uid="uid://biqeud7xsr6mp" path="res://textures/purple.tres" id="23_dh5oe"]
+[ext_resource type="Material" uid="uid://bl4ca0gv5evi8" path="res://textures/red.tres" id="24_grfv8"]
+[ext_resource type="Material" uid="uid://bw74xwj8yngty" path="res://textures/sky_blue.tres" id="25_ndu7f"]
+[ext_resource type="Material" uid="uid://ckk6gfgrj0s7q" path="res://textures/tan.tres" id="26_f7vvk"]
+[ext_resource type="Material" uid="uid://b21wr68kf7mqj" path="res://textures/trans.tres" id="27_vsgpf"]
+[ext_resource type="Material" uid="uid://cqhvyan7vcto7" path="res://textures/white.tres" id="28_g7esx"]
+[ext_resource type="Material" uid="uid://eawys8ayv3fg" path="res://textures/yellow.tres" id="29_j8thj"]
+[ext_resource type="Material" uid="uid://dgg0eqnhukknh" path="res://textures/full/full_black.tres" id="30_b7706"]
+[ext_resource type="Material" uid="uid://llrowecb158k" path="res://textures/full/full_blue.tres" id="31_617kk"]
+[ext_resource type="Material" uid="uid://fql1p8qnhslb" path="res://textures/full/full_brown.tres" id="32_ebryn"]
+[ext_resource type="Material" uid="uid://cjwu7s1v5rdc4" path="res://textures/full/full_dark_blue.tres" id="33_whuro"]
+[ext_resource type="Material" uid="uid://b6bhuka5ayo5v" path="res://textures/full/full_dark_brown.tres" id="34_oyriy"]
+[ext_resource type="Material" uid="uid://clrda7xhyukpe" path="res://textures/full/full_dark_green.tres" id="35_6j5tm"]
+[ext_resource type="Material" uid="uid://dovcprg7ab5aj" path="res://textures/full/full_dark_grey.tres" id="36_dvchl"]
+[ext_resource type="Material" uid="uid://b45osv0s3iokt" path="res://textures/full/full_dark_magenta.tres" id="37_rtrxr"]
+[ext_resource type="Material" uid="uid://cp5t4iu0nhyx3" path="res://textures/full/full_dark_pink.tres" id="38_ae71y"]
+[ext_resource type="Material" uid="uid://cbbpfb7pa3rib" path="res://textures/full/full_green.tres" id="39_nc1ho"]
+[ext_resource type="Material" uid="uid://bh44mdhv137ba" path="res://textures/full/full_grey.tres" id="40_i1k13"]
+[ext_resource type="Material" uid="uid://1f2xn2a1naxu" path="res://textures/full/full_indigo.tres" id="41_rlr4d"]
+[ext_resource type="Material" uid="uid://ca2ttu2o4xga5" path="res://textures/full/full_light_blue.tres" id="42_xatc0"]
+[ext_resource type="Material" uid="uid://btfjnl2jl4o8h" path="res://textures/full/full_light_grey.tres" id="43_ksrjx"]
+[ext_resource type="Material" uid="uid://c5361h42hpddr" path="res://textures/full/full_lime_green.tres" id="44_bsihl"]
+[ext_resource type="Material" uid="uid://bf4jrhq43et2t" path="res://textures/full/full_magenta.tres" id="45_0h5ys"]
+[ext_resource type="Material" uid="uid://babfb7mgkw4m" path="res://textures/full/full_med_green.tres" id="46_cpuh4"]
+[ext_resource type="Material" uid="uid://bft6ep8wleq0j" path="res://textures/full/full_midnight.tres" id="47_uudoh"]
+[ext_resource type="Material" uid="uid://1rxaqme0prus" path="res://textures/full/full_orange.tres" id="48_3d3v1"]
+[ext_resource type="Material" uid="uid://daqpnvyx3t27a" path="res://textures/full/full_peach.tres" id="49_p6j0a"]
+[ext_resource type="Material" uid="uid://d1ead7jst5hxr" path="res://textures/full/full_pink.tres" id="50_qobg2"]
+[ext_resource type="Material" uid="uid://dsn8bi4o6tcy0" path="res://textures/full/full_purple.tres" id="51_uy86k"]
+[ext_resource type="Material" uid="uid://emn7igk3fvn3" path="res://textures/full/full_red.tres" id="52_udyr7"]
+[ext_resource type="Material" uid="uid://cvb7wi87ix62a" path="res://textures/full/full_sky_blue.tres" id="53_7vybm"]
+[ext_resource type="Material" uid="uid://do80xoxryiesh" path="res://textures/full/full_tan.tres" id="54_k2t6y"]
+[ext_resource type="Material" uid="uid://d15w1jbpfq7a2" path="res://textures/full/full_white.tres" id="55_qrwaa"]
+[ext_resource type="Material" uid="uid://c8bisaip8vj8e" path="res://textures/full/full_yellow.tres" id="56_rx55p"]
+
+[resource]
+script = ExtResource("1_tpjws")
+all = Dictionary[String, Material]({
+"Black": ExtResource("1_ntfnf"),
+"Blue": ExtResource("2_sb034"),
+"Brown": ExtResource("3_k0fev"),
+"Dark Blue": ExtResource("4_yej3r"),
+"Dark Brown": ExtResource("5_a300q"),
+"Dark Green": ExtResource("6_t8go4"),
+"Dark Grey": ExtResource("7_tyck5"),
+"Dark Magenta": ExtResource("8_jcoh5"),
+"Dark Pink": ExtResource("9_kgxg7"),
+"Dark Purple": ExtResource("10_il6jh"),
+"Full Black": ExtResource("30_b7706"),
+"Full Blue": ExtResource("31_617kk"),
+"Full Brown": ExtResource("32_ebryn"),
+"Full Dark Blue": ExtResource("33_whuro"),
+"Full Dark Brown": ExtResource("34_oyriy"),
+"Full Dark Green": ExtResource("35_6j5tm"),
+"Full Dark Grey": ExtResource("36_dvchl"),
+"Full Dark Magenta": ExtResource("37_rtrxr"),
+"Full Dark Pink": ExtResource("38_ae71y"),
+"Full Green": ExtResource("39_nc1ho"),
+"Full Grey": ExtResource("40_i1k13"),
+"Full Indigo": ExtResource("41_rlr4d"),
+"Full Light Blue": ExtResource("42_xatc0"),
+"Full Light Grey": ExtResource("43_ksrjx"),
+"Full Lime Green": ExtResource("44_bsihl"),
+"Full Magenta": ExtResource("45_0h5ys"),
+"Full Med Green": ExtResource("46_cpuh4"),
+"Full Midnight": ExtResource("47_uudoh"),
+"Full Orange": ExtResource("48_3d3v1"),
+"Full Peach": ExtResource("49_p6j0a"),
+"Full Pink": ExtResource("50_qobg2"),
+"Full Purple": ExtResource("51_uy86k"),
+"Full Red": ExtResource("52_udyr7"),
+"Full Sky Blue": ExtResource("53_7vybm"),
+"Full Tan": ExtResource("54_k2t6y"),
+"Full White": ExtResource("55_qrwaa"),
+"Full Yellow": ExtResource("56_rx55p"),
+"Green": ExtResource("11_ovtox"),
+"Grey": ExtResource("12_jj26r"),
+"Indigo": ExtResource("13_ry5kd"),
+"Light Blue": ExtResource("14_38f5j"),
+"Light Grey": ExtResource("15_wsr0o"),
+"Lime Green": ExtResource("16_al3un"),
+"Magenta": ExtResource("17_ao1qn"),
+"Med Green": ExtResource("18_nanma"),
+"Midnight": ExtResource("19_8n07q"),
+"Orange": ExtResource("20_eggb3"),
+"Peach": ExtResource("21_8u3w2"),
+"Pink": ExtResource("22_2k5ph"),
+"Purple": ExtResource("23_dh5oe"),
+"Red": ExtResource("24_grfv8"),
+"Sky Blue": ExtResource("25_ndu7f"),
+"Tan": ExtResource("26_f7vvk"),
+"Trans": ExtResource("27_vsgpf"),
+"White": ExtResource("28_g7esx"),
+"Yellow": ExtResource("29_j8thj")
+})
+metadata/_custom_type_script = "uid://dyuywepfe74dt"

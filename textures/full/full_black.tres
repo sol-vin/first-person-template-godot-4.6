@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dgg0eqnhukknh"]
+
+[resource]
+resource_name = "Full Black"
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+texture_filter = 2

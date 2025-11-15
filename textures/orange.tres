@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cvn7qg7uc6xdy"]
+
+[ext_resource type="Shader" uid="uid://bytnkuyrmylvh" path="res://shaders/outline.gdshader" id="1_neqvs"]
+[ext_resource type="Shader" uid="uid://bvjkucko3lath" path="res://shaders/vertex_colors.gdshader" id="2_f8kn5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_neqvs"]
+render_priority = 0
+shader = ExtResource("1_neqvs")
+shader_parameter/on = true
+shader_parameter/color_threshold = 0.001
+shader_parameter/outline_color = Color(1, 0.309804, 0.309804, 1)
+shader_parameter/color_polygons = true
+shader_parameter/polygon_color = Color(1, 0.498039, 0.309804, 1)
+shader_parameter/outline_thickness = 0.5
+shader_parameter/edge_blur = 1.0
+shader_parameter/exact_color_match = false
+shader_parameter/remove_isolated_pixels = true
+shader_parameter/min_connected_edges = 2
+
+[resource]
+resource_name = "Orange"
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_neqvs")
+shader = ExtResource("2_f8kn5")
+shader_parameter/on = true
