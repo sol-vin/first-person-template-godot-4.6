@@ -53,3 +53,4 @@ TODO:
   - MultiMeshScatter? Ghost? MultimeshDuplicator?
   - Make a trigger called `PlaneTrigger` that is allowed to take a marking/facing material to get a normal to find out if the player is on one side or the other of a plane.
   - Exclude `_dev` from being built into godot project.
+  - Turn interact ray cast on and off (for fps, rather than fp)
