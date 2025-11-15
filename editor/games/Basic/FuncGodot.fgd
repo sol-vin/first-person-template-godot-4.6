@@ -21,45 +21,6 @@
 
 @SolidClass color(204 204 204) base(Phong) = func_illusionary : "Static geometry with no collision. Builds a Node3D with a MeshInstance3D and an Occluder3D to aid in render culling of other VisualInstance3D nodes." []
 
-@PointClass color(204 0 204) size(-4.0 -4.0 -4.0, 8.0 8.0 8.0) = purelight : "A pure light
-" 
-[
-	attenuation(float) : "" : "0.0"
-	color(float) : "" : "0.5"
-	color_is_black(choices) : "" : 0 = 
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	color_is_white(choices) : "" : 0 = 
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	energy(float) : "" : "0.5"
-	range(float) : "" : "10.0"
-]
-
-@SolidClass color(204 204 204) = pure_spotlight : "A spot light" 
-[
-	angle_attenuation(float) : "" : "1.0"
-	attenuation(float) : "" : "0.0"
-	color(float) : "" : "0.5"
-	color_is_black(choices) : "" : 0 = 
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	color_is_white(choices) : "" : 0 = 
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	energy(float) : "" : "0.5"
-	range(float) : "" : "10.0"
-	spot_angle(float) : "" : "45.0"
-]
-
 @SolidClass color(204 204 204) = reference_brush : "A reference brush used for some sort of positioning" 
 [
 	name(string) : "" : ""
