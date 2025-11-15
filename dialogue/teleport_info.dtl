@@ -1,0 +1,4 @@
+do Player.disable_input()
+This shows how to use TeleportTrigger to move the player around! The green area teleports to red with a rotation. The yellow one teleports without rotating.
+[wait time="0.5"]
+do Player.enable_input()

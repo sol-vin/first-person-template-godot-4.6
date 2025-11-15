@@ -19,5 +19,5 @@ func rebuild():
 func teleport():
 	var begin = references.get_node(target_name)
 	var end = dest_references.get_node(dest_target_name)
-	Player.queue_teleport_in_relation_to(begin, end, player_rotation)
+	Player.queue_teleport_in_relation_to(begin, end, deg_to_rad(player_rotation))
 	on_teleport.emit()

@@ -1,0 +1,4 @@
+do Player.disable_input()
+This is the flip tunnel. It shows how to use the TeleportTrigger to silently teleport and rotate the player.
+[wait time="0.5"]
+do Player.enable_input()

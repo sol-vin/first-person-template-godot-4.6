@@ -4,6 +4,7 @@ Set-Location -Path $PSScriptRoot
 
 $MapFile = "../../maps/main.map"
 $MapTable = @{
+	# Layer Name -> Location
 	"start"="../../maps/start.map";
 }
 
@@ -20,13 +21,13 @@ foreach ($entry in $MapTable.GetEnumerator()) {
 	# Start-Process -FilePath "powershell.exe" -ArgumentList "-File", $filePath
 }
 
-# Create a new SpVoice objects
-$voice = New-Object -ComObject Sapi.spvoice
+# # Create a new SpVoice objects
+# $voice = New-Object -ComObject Sapi.spvoice
 
-# Set the speed - positive numbers are faster, negative numbers, slower
-$voice.rate = 0
+# # Set the speed - positive numbers are faster, negative numbers, slower
+# $voice.rate = 0
 
-# Say something
-$voice.speak("Map Compiled! Map Compiled! Map Compiled!")
+# # Say something
+# $voice.speak("Map Compiled! Map Compiled! Map Compiled!")
 
 Set-Location -Path $PSScriptRoot
