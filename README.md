@@ -23,7 +23,7 @@ Auto-loads setup in project for helpers, threaded level loading, and material da
   - `TeleportTrigger` - Teleports the player from a source location to a destination location. Can rotate the players Y axis.
   - `Trigger` - Triggers when a player passes through this. Can determine if x/y/z axis was crossed.
   - `Aligner` - Aligns nodes with a target named node. Usually used to align a godot object/scene with a ReferenceBruch
-
+### Misc
   - `ClickAction` - Allows a parent object to be clicked (StaticBody/RigidBody)
   - `Crosshair` - Contains stuff for fading in and out the player crosshair
   - `Helpers` - Contains global helper functions
@@ -46,8 +46,11 @@ Auto installs TrenchBroom, MESS, and Godot.
 
 ## Scripts:
   - `compile-map.ps1` - Compiles a map located at `maps/main.map`. Will split the map up into layers based on the dictionary at `$MapTable`
-  - `setup_dev.ps1` - Sets up the dev env. Windows only, for now... Installs Trenchbroom, MESS, and Godot, then copies relevant files to where they need to go
-  - `run_editor.ps1` - Starts Godot. Clicking on `godot.exe` will launch the game itself, not the editor.
+  - `setup-dev.ps1` - Sets up the dev env. Windows only, for now... Installs Trenchbroom, MESS, and Godot, then copies relevant files to where they need to go
+  - `run-editor.ps1` - Starts Godot. Clicking on `godot.exe` will launch the game itself, not the editor.
+  - `copy-fgd.ps1` - Copies the FGD stuff into the Trenchbroom editor.
+  - `clean-examples.ps1` - Cleans out the example stuff in the project
+
 
 Made to quick start game jams easier. :D
 
