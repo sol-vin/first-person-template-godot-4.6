@@ -29,6 +29,8 @@ func get_interact_collider():
 		##$DebugLabel.text = result.collider.name
 	return result
 
+var current_item
+
 func _process(delta: float) -> void:
 	if !$"Player Input Component".disable_input:
 		var result = get_interact_collider()
@@ -42,16 +44,35 @@ func _process(delta: float) -> void:
 				Player.get_node("Player Entity Monitor/Crosshair").fade_out()
 		else:
 			Player.get_node("Player Entity Monitor/Crosshair").fade_out()
-		if Input.is_action_pressed("interact"):
-			if result.has("collider"):
-				for child in result.collider.get_children():
-					if child is ClickAction:
-						child.left_click(result.collider)
-		if Input.is_action_pressed("interact2"):
-			if result.has("collider"):
-				for child in result.collider.get_children():
-					if child is ClickAction:
-						child.right_click(result.collider)
+		if !current_item:
+			if Input.is_action_pressed("interact"):
+				if result.has("collider"):
+					for child in result.collider.get_children():
+						if child is ClickAction:
+							current_item = result.collider
+							child.left_click(result.collider)
+			elif Input.is_action_pressed("interact2"):
+				if result.has("collider"):
+					for child in result.collider.get_children():
+						if child is ClickAction:
+							current_item = result.collider
+							child.right_click(result.collider)
+		else:
+			if Input.is_action_pressed("interact"):
+				if result.has("collider") and result.collider == current_item:
+					for child in result.collider.get_children():
+						if child is ClickAction:
+							child.left_click(result.collider)
+				else:
+					current_item = null
+			elif Input.is_action_pressed("interact2"):
+				if result.has("collider") and result.collider == current_item:
+					for child in result.collider.get_children():
+						if child is ClickAction:
+							current_item = result.collider
+							child.right_click(result.collider)
+				else:
+					current_item = null
 
 
 var teleport = false
