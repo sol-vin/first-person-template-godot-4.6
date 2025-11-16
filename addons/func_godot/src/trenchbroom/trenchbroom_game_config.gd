@@ -46,7 +46,7 @@ enum GameConfigVersion {
 
 ## [FuncGodotFGDFile] resource to include with this game. If using multiple FGD File resources, 
 ## this should be the master FGD File that contains them in [member FuncGodotFGDFile.base_fgd_files].
-@export var fgd_file : FuncGodotFGDFile = preload("res://addons/func_godot/fgd/func_godot_fgd.tres")
+@export var fgd_file : FuncGodotFGDFile 
 
 ## Scale expression that modifies the default display scale of entities in TrenchBroom.
 ## See [url="https://trenchbroom.github.io/manual/latest/#game_configuration_files_entities"]TrenchBroom Manual Entity Configuration Information[/url] for more information.

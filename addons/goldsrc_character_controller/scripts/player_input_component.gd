@@ -51,6 +51,13 @@ func _physics_process(_delta) -> void:
 	if not disable_input:
 		gather_input()
 		act_on_input()
+	else:
+		Body.velocity = Vector3.ZERO
+		Move.movement_vector = Vector3.ZERO
+		movement_input = Vector3.ZERO
+		mouse_input = Vector2.ZERO
+		move_dir = Vector3.ZERO
+		act_on_input()
 
 func gather_mouse_input(event: InputEventMouseMotion) -> void:
 	# Deform the mouse input to make it viewport size independent.

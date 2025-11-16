@@ -8,7 +8,7 @@ class_name PolygonMesh extends MeshInstance3D
 @export_range(0.0, 2.0, 0.001) var normal_diff : float = 0.001
 @export_range(0.0, 1000.0, 0.001) var vertex_diff : float = 0.001
 
-const DEFAULT_IGNORED_MATERIALS = ["res://textures/trans.tres", "res://textures/frame.tres"]
+const DEFAULT_IGNORED_MATERIALS = ["res://textures/trans.tres"]
 const DEFAULT_PREBUILT_MATERIALS = [
 	# Full textures
 	"res://textures/full/full_black.tres",
@@ -43,7 +43,16 @@ const DEFAULT_PREBUILT_MATERIALS = [
 
 	
 	# Special textures
-	"res://textures/special/water.tres"
+	"res://textures/special/water.tres",
+	"res://textures/frame.tres",
+	"res://textures/marking_red.tres",
+	"res://textures/marking_orange.tres",
+	"res://textures/marking_yellow.tres",
+	"res://textures/marking_green.tres",
+	"res://textures/marking_blue.tres",
+	"res://textures/marking_purple.tres",
+	"res://textures/marking_magenta.tres",
+
 ]
 
 ## Materials that will be excluded completely from the final mesh

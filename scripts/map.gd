@@ -10,10 +10,9 @@ func _ready():
 func on_build_complete():
 	for child in get_children():
 		# Calculate polygons for WorldSpawns
-		if child is WorldSpawn:
+		
+		if child.has_method("on_map_build"):
 			child.on_map_build()
-		elif child is Illusion:
-			child.on_map_build()
-		elif child is ReferenceBrush:
-			child.on_map_build()
+		elif child.has_method("rebuild"):
+			child.rebuild()
 	on_rebuild_complete.emit()

@@ -1,0 +1,5 @@
+do Player.disable_input()
+These are chairs (duh), you can sit on them by interacting with left click.
+They require a facing quad to show where the player's camera should be.
+[wait time="0.5"]
+do Player.enable_input()

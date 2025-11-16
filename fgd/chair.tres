@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" load_steps=2 format=3 uid="uid://b764eb0t88qtj"]
+
+[ext_resource type="Script" uid="uid://5cow84q03m6a" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="1_70fip"]
+
+[resource]
+script = ExtResource("1_70fip")
+origin_type = 4
+global_illumination_mode = 0
+use_in_baked_light = false
+shadow_casting_setting = 0
+build_occlusion = true
+collision_mask = 0
+classname = "chair"
+description = "A chair"
+class_properties = {
+"collision_layers": 1,
+"collision_mask": 0,
+"layers": 1
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1)
+}
+node_class = "Chair"

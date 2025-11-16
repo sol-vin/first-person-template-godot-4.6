@@ -25,7 +25,7 @@ enum NetRadiantCustomMapType {
 
 ## [FuncGodotFGDFile] to include with this gamepack. If using multiple FGD file resources, 
 ## this should be the master FGD that contains them in [member FuncGodotFGDFile.base_fgd_files].
-@export var fgd_file : FuncGodotFGDFile = preload("res://addons/func_godot/fgd/func_godot_fgd.tres")
+@export var fgd_file : FuncGodotFGDFile
 
 ## Collection of [NetRadiantCustomShader] resources for shader file generation.
 @export var netradiant_custom_shaders : Array[Resource] = [

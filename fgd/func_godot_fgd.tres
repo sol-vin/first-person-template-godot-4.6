@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=10 format=3 uid="uid://crgpdahjaj"]
+
+[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_axt3h"]
+[ext_resource type="Resource" uid="uid://d3wwc8wh5od1x" path="res://fgd/phong_base.tres" id="1_ehab8"]
+[ext_resource type="Resource" uid="uid://n3tmvkuk8idu" path="res://fgd/func_worldspawn.tres" id="2_l5gmx"]
+[ext_resource type="Resource" uid="uid://bdji3873bg32h" path="res://fgd/worldspawn.tres" id="2_ri2rx"]
+[ext_resource type="Resource" uid="uid://b70vf4t5dc70t" path="res://fgd/func_geo.tres" id="3_7jigp"]
+[ext_resource type="Resource" uid="uid://dg5x44cc7flew" path="res://fgd/func_illusionary.tres" id="4_c4ucw"]
+[ext_resource type="Resource" uid="uid://b764eb0t88qtj" path="res://fgd/chair.tres" id="8_md88b"]
+[ext_resource type="Resource" uid="uid://ixp2pi72cpbk" path="res://fgd/reference_brush.tres" id="14_2evh0"]
+[ext_resource type="Resource" uid="uid://cgpbhymbjpk6x" path="res://fgd/reference_point.tres" id="15_frtxl"]
+
+[resource]
+script = ExtResource("1_axt3h")
+entity_definitions = Array[Resource]([ExtResource("1_ehab8"), ExtResource("2_ri2rx"), ExtResource("2_l5gmx"), ExtResource("3_7jigp"), ExtResource("4_c4ucw"), ExtResource("14_2evh0"), ExtResource("15_frtxl"), ExtResource("8_md88b")])

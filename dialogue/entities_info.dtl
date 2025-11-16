@@ -1,0 +1,7 @@
+do Player.disable_input()
+This shows the difference in how the player reacts to different entity types
+Worldspawn - Has a collider, and a mesh\
+Illusion - Has a mesh\
+Geo - Has a collider
+[wait time="0.5"]
+do Player.enable_input()

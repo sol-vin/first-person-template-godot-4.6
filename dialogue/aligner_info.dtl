@@ -1,0 +1,5 @@
+do Player.disable_input()
+This shows how to use aligner with a facing material to orient an aligner.
+To see how this works on the editor side, open up this map in TrenchBroom.
+[wait time="0.5"]
+do Player.enable_input()

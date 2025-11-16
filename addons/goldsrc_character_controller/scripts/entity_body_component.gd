@@ -71,7 +71,7 @@ func _physics_process(delta) -> void:
 	view_target.transform.origin.y = offset
 	
 	# Add the gravity.
-	if not is_on_floor():
+	if not is_on_floor() and !get_parent().sitting:
 		velocity.y -= Config.GRAVITY * delta
 	
 	handle_step_trace_values()

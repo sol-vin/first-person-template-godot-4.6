@@ -27,6 +27,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={}
 directories/dtl_directory={
+"aligner_info": "res://dialogue/aligner_info.dtl",
+"chair_info": "res://dialogue/chair_info.dtl",
+"entities_info": "res://dialogue/entities_info.dtl",
 "flip_tunnel_info": "res://dialogue/flip_tunnel_info.dtl",
 "start": "res://dialogue/start.dtl",
 "teleport_info": "res://dialogue/teleport_info.dtl"

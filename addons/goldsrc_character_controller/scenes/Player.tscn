@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://gwunh0jnqjjk"]
 
-[ext_resource type="Script" uid="uid://b7ffivvfg03mu" path="res://scripts/player.gd" id="1_h6o87"]
+[ext_resource type="Script" uid="uid://bmuu58njivnqv" path="res://scripts/player.gd" id="1_h6o87"]
 [ext_resource type="PackedScene" uid="uid://copr5bcep1f5b" path="res://addons/goldsrc_character_controller/scenes/PlayerInputComponent.tscn" id="1_srod8"]
 [ext_resource type="Resource" uid="uid://c1hjc38orbiye" path="res://addons/goldsrc_character_controller/resources/default_config.tres" id="2_5rl8c"]
 [ext_resource type="PackedScene" uid="uid://danln6hwvmnnk" path="res://addons/goldsrc_character_controller/scenes/EntityMotionComponent.tscn" id="2_83bak"]
@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dmqtwg515vvqp" path="res://addons/goldsrc_character_controller/scenes/PlayerCameraComponent.tscn" id="5_yuc8u"]
 [ext_resource type="PackedScene" uid="uid://tpvclehjvudv" path="res://addons/goldsrc_character_controller/scenes/PlayerEntityMonitor.tscn" id="7_dwmci"]
 [ext_resource type="Texture2D" uid="uid://mqsb5vl4qlow" path="res://textures/in-game/crosshair.png" id="9_qobfj"]
-[ext_resource type="Script" uid="uid://w6bww2ylqayx" path="res://scripts/crosshair.gd" id="10_46w01"]
+[ext_resource type="Script" uid="uid://c1pfdwwtsu5yr" path="res://scripts/crosshair.gd" id="10_46w01"]
 
 [node name="Player" type="Node3D" unique_id=509361972]
 process_mode = 3

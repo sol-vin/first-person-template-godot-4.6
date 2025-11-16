@@ -31,3 +31,10 @@
 [
 	name(string) : "" : ""
 ]
+
+@SolidClass color(204 204 204) = chair : "A chair" 
+[
+	collision_layers(integer) : "" : 1
+	collision_mask(integer) : "" : 0
+	layers(integer) : "" : 1
+]

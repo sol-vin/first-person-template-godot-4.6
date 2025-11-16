@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://7f378owaav5b"]
+
+[ext_resource type="Texture2D" uid="uid://b84fvt1mnbw2a" path="res://textures/special/marking_purple.png" id="1_l8j2x"]
+
+[resource]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0)
+albedo_texture = ExtResource("1_l8j2x")
+metallic_specular = 0.0
+texture_filter = 2

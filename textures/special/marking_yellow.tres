@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cgtn0lkse4wsb"]
+
+[ext_resource type="Texture2D" uid="uid://d13w13xcnp46f" path="res://textures/special/marking_yellow.png" id="1_jtvhq"]
+
+[resource]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0)
+albedo_texture = ExtResource("1_jtvhq")
+metallic_specular = 0.0
+texture_filter = 2

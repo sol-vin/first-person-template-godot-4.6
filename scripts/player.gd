@@ -17,7 +17,7 @@ func get_interact_collider():
 	var current_camera = get_viewport().get_camera_3d()
 	var params = PhysicsRayQueryParameters3D.new()
 	params.hit_back_faces = false
-	params.collision_mask = 4
+	params.collision_mask = 5
 	var midpoint = get_viewport().size/2.0
 	
 	params.from = current_camera.project_ray_origin(midpoint) 
@@ -42,12 +42,12 @@ func _process(delta: float) -> void:
 				Player.get_node("Player Entity Monitor/Crosshair").fade_out()
 		else:
 			Player.get_node("Player Entity Monitor/Crosshair").fade_out()
-		if Input.is_action_just_pressed("interact"):
+		if Input.is_action_pressed("interact"):
 			if result.has("collider"):
 				for child in result.collider.get_children():
 					if child is ClickAction:
 						child.left_click(result.collider)
-		if Input.is_action_just_pressed("interact2"):
+		if Input.is_action_pressed("interact2"):
 			if result.has("collider"):
 				for child in result.collider.get_children():
 					if child is ClickAction:
@@ -93,19 +93,19 @@ func _physics_process(delta: float) -> void:
 
 
 func disable_input():
-	self.body.collision_layer = 0
-	self.body.collision_mask = 0
+	# self.body.collision_layer = 0
+	# self.body.collision_mask = 0
 	
-	Helpers.turn_off(self.body)
+	# Helpers.turn_off(self.body)
 	
 	# set_process_input(false)
 	$"Player Input Component".disable_input = true
 	$"Player Entity Monitor/Crosshair".fade_out()
 	
 func enable_input():
-	Helpers.turn_on(self.body)
-	self.body.collision_layer = 2
-	self.body.collision_mask = 1
+	# # Helpers.turn_on(self.body)
+	# self.body.collision_layer = 2
+	# self.body.collision_mask = 1
 	# set_process_input(true)
 	$"Player Input Component".disable_input = false
 
@@ -123,6 +123,9 @@ func sit(camera_position, camera_rotation):
 	disable_input()
 	var offset = camera.camera.global_position - self.camera.global_position
 	self.body.global_position = camera_position + offset
+	self.body.collision_layer = 0
+	self.body.collision_mask = 0
+	
 	self.view.pitch_node.rotation.x = camera_rotation.x
 	self.view.yaw_node.rotation.y = camera_rotation.y
 
@@ -140,6 +143,8 @@ func stand():
 	if not sitting:
 		return
 	body.global_position = last_position
+	self.body.collision_layer = 2
+	self.body.collision_mask = 1
 	#self.camera.camera.global_rotation = last_rotation
 	self.view.pitch_node.rotation.x = last_rotation.x
 	self.view.yaw_node.rotation.y = last_rotation.y
@@ -147,7 +152,6 @@ func stand():
 	enable_input()
 
 func sit_toggle(camera_position, camera_rotation):
-	print("TOGGLED")
 	if sitting:
 		stand()
 	else:
